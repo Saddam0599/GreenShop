@@ -1,0 +1,647 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .home-desktop{
+    display: none;
+  }
+  
+  .planet-desktop {
+    display: none;
+  }
+  .btn {
+    width: 100px;
+    height: 35px;
+    background-color: #46A358;
+    border-radius: 6px;
+    margin-left: 20px;
+  }
+  
+  .header-span{
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .planet{
+    width: 1200px;
+    height: 450px;
+    position: static;
+    margin-top: 60px;
+  }
+  
+  .planet-img{
+    width: 135px;
+    top: -469px;
+    bottom: 172px;
+    position: relative;
+  }
+  
+  .planet-left{
+    margin-top: 80px;
+    width: 1200px;
+    height: 450px;
+  }
+  
+  .h1{
+    width: 205px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3D3D3D;
+    margin-bottom: 20px;
+  }
+  
+  .h2{
+    color: #3D3D3D;
+    width: 530px;
+    height: 140px;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 20px;
+  } 
+  
+  .span{
+    color: #46A358;
+    font-size: 70px;
+    line-height: 70px;
+  }
+  
+  .p{
+    width: 557px;
+    height: 45px;
+    margin-bottom: 40px;
+    color: #727272;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  .planet-btn{
+    margin-right: 300px;
+    width: 140px;
+    height: 40px;
+    background-color: #46A358;
+    border-radius: 6px;
+    color:white;
+  }
+  
+  @media only screen and (max-width: 640px){
+    .home-mobile{
+      display: none;
+    }
+    .home-desktop{
+      display: flex
+    }
+    .planet-desktop{
+      display: flex
+    }
+    .container{
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .mobile{
+      width: 366px;
+      height: 45px;
+    }
+    
+    .mobile-div{
+      width: 313px;
+      height: 45px;
+      border: 10px solid #F8F8F8;
+      background-color: #F8F8F8;
+      border-radius: 10px;
+    }
+    
+    .mobile-lupa{
+      width: 22px;
+      height: 22px;
+      color: #A5A5A5;
+    }
+    .mobile-span{
+      width: 104px;
+      height: 16px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #A5A5A5;
+  
+    }
+    .mobile-icon_div{
+      width: 45px;
+      height: 45px;
+      background-color: green;
+      border-radius: 14px;
+      display: flex;
+    }
+    .mobile-icon{
+      width: 22px;
+      height: 22px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    .mobile-planet{
+      display: none;
+    }
+  
+    .planet-mobile{
+      width: 366px;
+      height: 190px;
+      border: 10px solid #A5A5A5;
+      background-color: #A5A5A5;
+      border-radius: 16px;
+    }
+    .mobile-left_span{
+      color: green;
+      font-size: 24px;
+      line-height: 29px;
+    }
+    .mobile-h1{
+      width: 140px;
+      height: 16px;
+      font-size: 11px;
+      line-height: 16px;
+  
+    }
+    .mobile-h2{
+      width: 182px;
+      height: 58px;
+      font-size: 24px;
+      line-height: 29px;
+    }
+    .mobile-p{
+      width: 206px;
+      height: 37px;
+      font-size: 12px;
+      line-height: 18px;
+      color: #727272;
+    }
+    .planet-mobile_btn{
+      color: #46A358;
+    }
+    .planet-mobile-right{
+      position: static;
+    }
+    .planet-mobile-img{
+      width: 82px;
+      height: 82px;
+      position: relative;
+      left: -20px;
+      bottom: 88px;
+      margin-left: 4px;
+    }
+  }
+  
+  
+  .categories{
+    width: 310px;
+    height: 774px;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  
+  
+  .categories-header{
+    width: 838px;
+    height: 23px;
+    left: 420px;
+    bottom: 770px;
+  
+  }
+  
+  
+  .categories-section{
+    width: 840px;
+    height: 1190px;
+    left: 420px;
+    bottom: 750px;
+  }
+  
+  .categories-img{
+    width: 370px;
+    height: 470px;
+    bottom: 1210px;
+  }
+  
+  .categories-div{
+    width: 268px;
+    height: 383px;
+  }
+  
+  .categories-ul{
+    width: 91px;
+    height: 360px;
+  }
+  
+  .categories-ol{
+    width: 28px;
+    height: 360px;
+  }
+  
+  .categories-li{
+    font-size: 15px;
+    line-height: 40px;
+    color: #3D3D3D;
+    margin-left: 5px;
+  }
+  
+  .li-1{
+    color: #46A358;
+  }
+  
+  .categories-h1{
+    width: 93px;
+    height: 16px;
+    font-size: 18px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  .categories-span{
+    font-size: 15px;
+    line-height: 40px;
+    color: #3D3D3D;
+    margin-left: 43px;
+  }
+  
+  .span-1{
+    color: #46A358;
+  }
+  
+  .price{
+    width: 226px;
+    height: 133px;
+    margin-bottom: 50px;
+  }
+  
+  .price-h1{
+    width: 101px;
+    height: 16px;
+    font-size: 18px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  .uzunlik{
+    background-color: #46A358;
+  }
+  
+  .price-p{
+    width: 125px;
+    height: 16px;
+    font-size: 15px;
+    line-height: 16px;
+  }
+  
+  .price-span{
+    color: #46A358;
+    font-size: 15px;
+    line-height: 16px;
+  }
+  
+  .price-btn{
+    width: 90px;
+    height: 35px;
+    align-items: center;
+    background-color: #46A358;
+    color: white;
+    border-radius: 6px;
+  }
+  
+  .size{
+    width: 268px;
+    height: 143px;
+  }
+  
+  .size-ul{
+    width: 56px;
+    height: 120px;
+  }
+  
+  .size-ol{
+    width: 30px;
+    height: 120px;
+  }
+  
+  .size-li{
+    font-size: 15px;
+    line-height: 40px;
+    color: #3D3D3D;
+  }
+  
+  .size-span{
+    font-size: 15px;
+    line-height: 40px;
+    color: #3D3D3D;
+    margin-left: 35px;
+  }
+  .img{
+    width: 310px;
+    height: 470px;
+  }
+  
+  .img-h1{
+    width: 166px;
+    height: 16px;
+    font-size: 23px;
+    line-height: 16px;
+    position: relative;
+    left: 93px;
+  }
+  
+  .img-gul{
+    bottom: 368px;
+  }
+  
+  .header-li{
+    width: 66px;
+    height: 16px;
+    color: #46A358;
+    font-size: 15px;
+    line-height: 16px;
+  }
+  
+  .header-li1{
+    width: 86px;
+    height: 16px;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  .header-li2{
+    width: 29px;
+    height: 16px;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  
+  .tepa-p{
+    width: 63px;
+    height: 16px;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  .tepa-span{
+    width: 103px;
+    height: 16px;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  .btn1{
+    width: 80px;
+    height: 29px;
+    margin-left: 540px;
+    background-color: #46A358;
+    margin-top: 15px;
+  }
+  
+  .span3{
+    width: 63px;
+    height: 16px; 
+    color: white; 
+  }
+  
+  .planets{
+    width: 258px;
+    height: 300px;
+  }
+  
+  .icons{
+    width: 135px;
+    height: 35px;
+    margin-left: 350px;
+    gap: 25px;
+  }
+  
+  .plants-span{
+    width: 66px;
+    height: 16px;
+    border: 1px;
+    color: #CBCBCB;
+    align-items: center;
+  }
+  
+  .planets-h4{
+    width: 118px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  .planets-p{
+    width: 62px;
+    height: 16px;
+    color: #46A358;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .planets1-h4{
+    width: 152px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  .planets1-p{
+    width: 64px;
+    height: 16px;
+    color: #46A358;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .planets2-h4{
+    width: 99px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  .planets2-p{
+    width: 64px;
+    height: 16px;
+    color: #46A358;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .planets3-h4{
+    width: 127px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  .planets3-p{
+    width: 65px;
+    height: 16px;
+    color: #46A358;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .planets4-h4{
+    width: 142px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  .planets4-p{
+    width: 64px;
+    height: 16px;
+    color: #46A358;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .planets5-h4{
+    width: 115px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  .planets5-p{
+    width: 64px;
+    height: 16px;
+    color: #46A358;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .planets6-h4{
+    width: 116px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  .planets6-p{
+    width: 57px;
+    height: 16px;
+    color: #46A358;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .planets7-h4{
+    width: 150px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  .planets7-p{
+    width: 57px;
+    height: 16px;
+    color: #46A358;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .planets8-h4{
+    width: 139px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3D3D3D;
+  }
+  
+  .planets8-p{
+    width: 57px;
+    height: 16px;
+    color: #46A358;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  
+  
+  .number{
+    width: 215px;
+    height: 35px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  
+  
+  .plants4{
+    width: 586px;
+    height: 250px;
+    border: 1px solid red;
+    bottom: -15px;
+    left: -33px;
+  }
+  
+  .plants4-img{
+    width: 292px;
+    height: 292px;
+    left: -0px;
+    bottom: 43px;
+    border: 1px solid green;
+  }
+  .plants4-img1{
+    width: 100px;
+    height: 100px;
+    left: -293px;
+    bottom: -165px;
+    border: 1px solid green;
+  }
+  
+  .bg-div{
+    width: 1205px;
+    height: 302px;
+    border: 4px solid yellow;
+    bottom: 1050px; 
+  }
+  
+  .summer-btn{
+    background-color: #46A358;
+    color: white;
+  }
+
+  .ant-slider-step{
+    background-color: rgba(70,163,88,0.2) !important;
+  }
+  .ant-slider-step:hover{
+    background-color: #46A358 !important;
+  }
+
+  .ant-slider-track{
+    background-color: #46A358 !important;
+  }
+
+  .ant-slider-handle::after{
+    background-color: #46A358 !important;
+  }
+
+
+.input-range__slider{
+  background-color: #46A358 !important;
+  border: 1px solid #46A358 !important;
+}
+
+
+.input-range__track--active{
+  background: #46A358 !important;
+}
+.input-range__label-container{
+  display: none !important;
+}
